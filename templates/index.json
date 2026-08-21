@@ -117,7 +117,93 @@
         "primary_link": "shopify://collections/all",
         "secondary_label": "Conocé nuestra harina"
       }
+    },
+    "g4u_low_carb": {
+      "type": "g4u-low-carb-benefits",
+      "blocks": {
+        "low_carb_fat": { "type": "benefit", "settings": { "title": "Activamos la quema de grasa", "text": "<p>Cuando reducimos los carbs, también bajamos el azúcar en sangre y la insulina.</p>" } },
+        "low_carb_energy": { "type": "benefit", "settings": { "title": "Energía más estable", "text": "<p>Dejamos atrás la montaña rusa del azúcar.</p>" } },
+        "low_carb_focus": { "type": "benefit", "settings": { "title": "Foco y claridad mental", "text": "<p>Más foco, más lucidez, más presencia.</p>" } },
+        "low_carb_wellbeing": { "type": "benefit", "settings": { "title": "Menos inflamación, más bienestar", "text": "<p>Al estabilizar el azúcar en sangre, disminuye la inflamación y mejora cómo nos sentimos.</p>" } }
+      },
+      "block_order": ["low_carb_fat", "low_carb_energy", "low_carb_focus", "low_carb_wellbeing"],
+      "settings": { "title": "Alimentación low-carb" }
+    },
+    "g4u_experts": {
+      "type": "g4u-experts",
+      "blocks": {
+        "expert_alejandra": {
+          "type": "expert",
+          "settings": {
+            "name": "Dra. Alejandra Moisello",
+            "role": "Jefa de Servicio de Nutrición y Diabetes del Hospital Durand\nEspecialista en Nutrición y Medicina del deporte",
+            "quote": "<p>“Recomiendo los productos de G4U por su excelente aporte de fibra y proteínas con un perfil completo de aminoácidos. Son el aliado ideal para integrar en una alimentación equilibrada, ya que brindan saciedad real y resuelven de forma saludable esos almuerzos rápidos que el ritmo diario exige.”</p>",
+            "handle": "@Dra.alejandramoisello"
+          }
+        },
+        "expert_roxana": {
+          "type": "expert",
+          "settings": {
+            "name": "Roxana Marachlian",
+            "role": "Nutricionista (UBA) · MN 1806 · MP 1128\nEspecializada en alimentación low-carb / keto",
+            "quote": "<p>“Los panes G4U me resultaron una muy buena opción, ya que, al tener un alto valor proteico y muy bajo contenido de carbohidratos, son ideales para pacientes con sobrepeso, obesidad, insulinorresistencia, prediabetes y diabetes.”</p>",
+            "handle": "@nutricionintegralballester"
+          }
+        }
+      },
+      "block_order": ["expert_alejandra", "expert_roxana"],
+      "settings": {
+        "eyebrow": "Respaldo profesional",
+        "title": "Profesionales que nos recomiendan",
+        "description": "<p>Nutricionistas y especialistas en alimentación confían en G4U por su perfil nutricional y lo incorporan como una herramienta dentro de una alimentación equilibrada.</p>"
+      }
+    },
+    "g4u_feel_good": {
+      "type": "g4u-feel-good",
+      "settings": {
+        "image_alt": "Mesa compartida con panes G4U",
+        "heading": "Sentite bien,",
+        "accent_heading": "comiendo rico",
+        "text": "<p>En G4U combinamos tecnología alimentaria avanzada y sabor artesanal.</p>",
+        "button_label": "Conocé nuestra harina"
+      }
+    },
+    "g4u_instagram": {
+      "type": "g4u-instagram",
+      "blocks": {
+        "instagram_1": { "type": "post", "settings": { "accessibility_label": "Ver publicación 1 en Instagram" } },
+        "instagram_2": { "type": "post", "settings": { "accessibility_label": "Ver publicación 2 en Instagram" } },
+        "instagram_3": { "type": "post", "settings": { "accessibility_label": "Ver publicación 3 en Instagram" } },
+        "instagram_4": { "type": "post", "settings": { "accessibility_label": "Ver publicación 4 en Instagram" } },
+        "instagram_5": { "type": "post", "settings": { "accessibility_label": "Ver publicación 5 en Instagram" } },
+        "instagram_6": { "type": "post", "settings": { "accessibility_label": "Ver publicación 6 en Instagram" } },
+        "instagram_7": { "type": "post", "settings": { "accessibility_label": "Ver publicación 7 en Instagram" } },
+        "instagram_8": { "type": "post", "settings": { "accessibility_label": "Ver publicación 8 en Instagram" } }
+      },
+      "block_order": ["instagram_1", "instagram_2", "instagram_3", "instagram_4", "instagram_5", "instagram_6", "instagram_7", "instagram_8"],
+      "settings": { "title": "Descubrí más en Instagram", "button_label": "Seguinos" }
+    },
+    "g4u_services": {
+      "type": "g4u-service-benefits",
+      "blocks": {
+        "service_shipping": { "type": "benefit", "settings": { "text": "Envíos Buenos Aires,\nCórdoba y Santa Fe" } },
+        "service_nutrition": { "type": "benefit", "settings": { "text": "Nutrición inteligente, con sabor auténtico y beneficios reales" } },
+        "service_delivery": { "type": "benefit", "settings": { "text": "Entregas en 24/48 hs\nen AMBA" } },
+        "service_payment": { "type": "benefit", "settings": { "text": "Pago seguro" } }
+      },
+      "block_order": ["service_shipping", "service_nutrition", "service_delivery", "service_payment"],
+      "settings": { "accessibility_label": "Beneficios de comprar en G4U" }
+    },
+    "g4u_newsletter": {
+      "type": "g4u-newsletter",
+      "settings": {
+        "title": "Suscribite y accedé a un 10% off en tu primer compra",
+        "text": "<p>Y enterate primero de las novedades y ofertas exclusivas.</p>",
+        "placeholder": "Ingresá tu email",
+        "button_label": "Suscribirme",
+        "success_message": "¡Gracias por suscribirte!"
+      }
     }
   },
-  "order": ["g4u_hero", "g4u_choice", "g4u_products", "g4u_categories", "g4u_science", "g4u_marquee", "g4u_comparison"]
+  "order": ["g4u_hero", "g4u_choice", "g4u_products", "g4u_categories", "g4u_science", "g4u_marquee", "g4u_comparison", "g4u_low_carb", "g4u_experts", "g4u_feel_good", "g4u_instagram", "g4u_services", "g4u_newsletter"]
 }

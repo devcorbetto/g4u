@@ -668,3 +668,64 @@
 @media (prefers-reduced-motion: reduce) {
   .g4u-experts__track { scroll-behavior: auto; }
 }
+
+/* Instagram */
+.g4u-instagram { background: var(--g4u-cream); color: var(--g4u-ink); padding: 8rem 4rem 4rem; }
+.g4u-instagram__header { margin: 0 auto 6rem; text-align: center; }
+.g4u-instagram__title { color: inherit; font-size: 4.8rem; margin: 0 auto 2.4rem; max-width: 45rem; }
+.g4u-instagram__button { border: .1rem solid var(--g4u-ink); color: var(--g4u-ink); gap: .8rem; }
+.g4u-instagram__button img { height: 2rem; width: 2rem; }
+.g4u-instagram__grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.g4u-instagram__item { aspect-ratio: 1; border-radius: 1.2rem; overflow: hidden; position: relative; }
+.g4u-instagram__image { height: 100%; object-fit: cover; transition: transform .4s ease; width: 100%; }
+.g4u-instagram__item:hover .g4u-instagram__image { transform: scale(1.035); }
+
+/* Service benefits */
+.g4u-service-benefits { background: var(--g4u-cream); color: var(--g4u-burgundy); padding: 6rem 4rem 4rem; }
+.g4u-service-benefits__grid { display: grid; gap: 3.2rem; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.g4u-service-benefits__item { text-align: center; }
+.g4u-service-benefits__icon { height: 4.8rem; margin-bottom: 2.4rem; object-fit: contain; width: 8rem; }
+.g4u-service-benefits__text { font-size: 2rem; line-height: 1.2; margin: auto; max-width: 25rem; }
+
+/* Newsletter */
+.g4u-newsletter { background: var(--g4u-orange); color: var(--g4u-burgundy); padding: 4rem; }
+.g4u-newsletter__inner { align-items: center; display: grid; gap: 4rem; grid-template-columns: minmax(0, 1fr) minmax(44rem, .98fr); }
+.g4u-newsletter__title { color: inherit; font-size: 4rem; margin: 0 0 .8rem; max-width: 61rem; }
+.g4u-newsletter__text { font-size: 1.8rem; line-height: 1.5; }
+.g4u-newsletter__form-row { display: flex; gap: 1.2rem; }
+.g4u-newsletter__input {
+  background: transparent;
+  border: .1rem solid var(--g4u-burgundy);
+  border-radius: 999px;
+  color: var(--g4u-burgundy);
+  flex: 1;
+  font: inherit;
+  font-size: 1.6rem;
+  min-height: 4.8rem;
+  padding: 1.2rem 1.6rem;
+}
+.g4u-newsletter__input::placeholder { color: rgba(80, 3, 34, .65); }
+.g4u-newsletter__submit { background: var(--g4u-burgundy); border: .1rem solid var(--g4u-burgundy); color: var(--g4u-cream); cursor: pointer; }
+.g4u-newsletter__message { font-size: 1.4rem; margin: 1rem 0 0; }
+
+@media screen and (max-width: 989px) {
+  .g4u-service-benefits__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 4.8rem; }
+  .g4u-newsletter__inner { grid-template-columns: 1fr; }
+}
+
+@media screen and (max-width: 749px) {
+  .g4u-instagram { padding: 6.4rem 2rem 3.2rem; }
+  .g4u-instagram__header { margin-bottom: 3.2rem; }
+  .g4u-instagram__title { font-size: 4rem; }
+  .g4u-instagram__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .g4u-service-benefits { padding: 5.6rem 2rem 3.2rem; }
+  .g4u-service-benefits__grid { grid-template-columns: 1fr; }
+  .g4u-newsletter { padding: 4.8rem 2rem; }
+  .g4u-newsletter__inner { gap: 2.4rem; }
+  .g4u-newsletter__title { font-size: 3.6rem; }
+  .g4u-newsletter__form-row { align-items: stretch; flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .g4u-instagram__image { transition: none; }
+}
