@@ -1,0 +1,123 @@
+{
+  "sections": {
+    "g4u_hero": {
+      "type": "g4u-hero",
+      "blocks": {
+        "hero_main": {
+          "type": "slide",
+          "settings": {
+            "image_alt": "Pan de molde G4U sobre una tabla de madera",
+            "heading": "El pan de siempre,",
+            "accent_heading": "beneficios reales",
+            "text": "<p>Desarrollamos una harina funcional propia y logramos un pan tan rico como el de siempre, para que no tengas que elegir entre sabor y bienestar.</p>",
+            "button_label": "Descubrí nuestro pan de molde",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": ["hero_main"],
+      "settings": { "accessibility_label": "Promociones principales", "autoplay": true, "autoplay_seconds": 5 }
+    },
+    "g4u_choice": {
+      "type": "g4u-choice-banner",
+      "settings": {
+        "first_prefix": "No tenés que",
+        "first_suffix": "elegir entre",
+        "second_accent_one": "cuidarte",
+        "second_joiner": "y",
+        "second_accent_two": "disfrutar"
+      }
+    },
+    "g4u_products": {
+      "type": "g4u-featured-products",
+      "settings": {
+        "eyebrow": "Products",
+        "title": "Nuestros packs",
+        "description": "<p>Elegí el pack que mejor se adapta a vos y disfrutá todos los días.</p>",
+        "collection": "all",
+        "products_to_show": 4,
+        "show_secondary_image": true,
+        "show_view_all": true,
+        "button_label": "Ver todos los productos"
+      }
+    },
+    "g4u_categories": {
+      "type": "g4u-category-grid",
+      "blocks": {
+        "category_breads": { "type": "category", "settings": { "title": "Panes", "button_label": "Ver productos", "link": "shopify://collections/all" } },
+        "category_packs": { "type": "category", "settings": { "title": "Packs", "button_label": "Ver productos", "link": "shopify://collections/all" } },
+        "category_snacks": { "type": "category", "settings": { "title": "Snacks", "button_label": "Ver productos", "link": "shopify://collections/all" } }
+      },
+      "block_order": ["category_breads", "category_packs", "category_snacks"],
+      "settings": { "accessibility_label": "Comprar por categoría" }
+    },
+    "g4u_science": {
+      "type": "g4u-science-tabs",
+      "blocks": {
+        "science_carbs": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Menos carbohidratos",
+            "image_alt": "Espigas de trigo sobre harina",
+            "tagline": "Almidón resistente RS4",
+            "heading": "El carbohidrato que se comporta como fibra.",
+            "text": "<p>Nuestra base está formulada con almidón resistente tipo 4 (RS4), que no se digiere como un carbohidrato tradicional. Ayuda a disminuir los carbohidratos netos, aporta mayor saciedad y contribuye al equilibrio de la microbiota intestinal. Es uno de los componentes que hace posible un pan con un perfil nutricional completamente diferente.</p>",
+            "benefit_1": "Menor impacto glucémico",
+            "benefit_2": "Más fibra funcional",
+            "benefit_3": "Mayor saciedad"
+          }
+        },
+        "science_protein": { "type": "tab", "settings": { "tab_label": "Más proteína", "tagline": "", "heading": "Más proteína", "text": "", "benefit_1": "", "benefit_2": "", "benefit_3": "" } },
+        "science_fiber": { "type": "tab", "settings": { "tab_label": "Más fibra", "tagline": "", "heading": "Más fibra", "text": "", "benefit_1": "", "benefit_2": "", "benefit_3": "" } },
+        "science_flavor": { "type": "tab", "settings": { "tab_label": "Más sabor", "tagline": "", "heading": "Más sabor", "text": "", "benefit_1": "", "benefit_2": "", "benefit_3": "" } }
+      },
+      "block_order": ["science_carbs", "science_protein", "science_fiber", "science_flavor"],
+      "settings": {
+        "eyebrow": "Nuestra harina",
+        "title": "La ciencia detrás de nuestro pan",
+        "description": "<p>Una harina funcional desarrollada para lograr el sabor y la textura del pan tradicional, con beneficios nutricionales reales.</p>",
+        "tabs_label": "Beneficios de nuestra harina",
+        "why_label": "Por qué lo usamos",
+        "link_label": "Conocé nuestra harina"
+      }
+    },
+    "g4u_marquee": {
+      "type": "g4u-nutrition-marquee",
+      "blocks": {
+        "marquee_carbs": { "type": "item", "settings": { "text": "Low-carbs" } },
+        "marquee_protein": { "type": "item", "settings": { "text": "Alto en proteínas" } },
+        "marquee_fiber": { "type": "item", "settings": { "text": "Alto en fibras" } }
+      },
+      "block_order": ["marquee_carbs", "marquee_protein", "marquee_fiber"],
+      "settings": { "accessibility_label": "Beneficios nutricionales", "duration": 14 }
+    },
+    "g4u_comparison": {
+      "type": "g4u-comparison-table",
+      "blocks": {
+        "comparison_calories": { "type": "row", "settings": { "label": "Calorías (kcal)", "value_1": "360", "value_2": "320", "value_3": "387", "value_4": "576", "value_5": "151" } },
+        "comparison_carbs": { "type": "row", "settings": { "label": "Carbohidratos (g)", "value_1": "71", "value_2": "68", "value_3": "58", "value_4": "20", "value_5": "11" } },
+        "comparison_fiber": { "type": "row", "settings": { "label": "Fibra (g)", "value_1": "2,4", "value_2": "10", "value_3": "10", "value_4": "12", "value_5": "42" } },
+        "comparison_protein": { "type": "row", "settings": { "label": "Proteínas (g)", "value_1": "10", "value_2": "12", "value_3": "22", "value_4": "21", "value_5": "24" } },
+        "comparison_fat": { "type": "row", "settings": { "label": "Grasas totales (g)", "value_1": "1", "value_2": "2,5", "value_3": "6", "value_4": "50", "value_5": "1" } },
+        "comparison_saturated": { "type": "row", "settings": { "label": "Grasas saturadas (g)", "value_1": "0,2", "value_2": "0,5", "value_3": "0,6", "value_4": "3,8", "value_5": "0" } }
+      },
+      "block_order": ["comparison_calories", "comparison_carbs", "comparison_fiber", "comparison_protein", "comparison_fat", "comparison_saturated"],
+      "settings": {
+        "eyebrow": "Nutrición",
+        "title": "Compará y elegí mejor",
+        "description": "<p>Nuestra harina fue desarrollada para ofrecer más proteína, más fibra y muchos menos carbohidratos que las harinas tradicionales. Los números hablan por sí solos.</p>",
+        "first_column": "Nutrientes",
+        "column_1": "Harina de Trigo 000",
+        "column_2": "Harina de Trigo Integral",
+        "column_3": "Harina de Garbanzos",
+        "column_4": "Harina de Almendras",
+        "column_5": "Harina G4U",
+        "note": "Cada 100g",
+        "primary_label": "Descubrir productos",
+        "primary_link": "shopify://collections/all",
+        "secondary_label": "Conocé nuestra harina"
+      }
+    }
+  },
+  "order": ["g4u_hero", "g4u_choice", "g4u_products", "g4u_categories", "g4u_science", "g4u_marquee", "g4u_comparison"]
+}
